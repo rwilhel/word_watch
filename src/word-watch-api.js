@@ -13,6 +13,19 @@ class WordWatchApi {
       return post
     })
   }
+
+  static postWord(word) {
+    return $.ajax({
+      url: baseUrl + '/words',
+      type: 'POST',
+      dataType: 'json',
+      data: { word: {value: word} },
+      error: function(error) {
+      }
+    }).done(function(post) {
+      return post
+    })
+  }
 }
 
 module.exports = WordWatchApi
