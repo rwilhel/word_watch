@@ -1,4 +1,4 @@
-const $ = requre('jquery')
+const $ = require('jquery')
 const baseUrl = 'https://wordwatch-api.herokuapp.com/api/v1'
 
 class WordWatchApi {
